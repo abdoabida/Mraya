@@ -1,6 +1,7 @@
 var video = document.querySelector("#videoElement");
-//var audio = new Audio('../audio_file.mp3');
-//audio.play();
+var audio = new Audio('audio_file.mp3');
+audio.play();
+audio.loop = true;
 
 if (navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices.getUserMedia({ video: true })
