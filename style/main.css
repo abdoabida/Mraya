@@ -16,9 +16,9 @@ body {
 #videoElement {
 	width: 90%;
 	height: 80vh;
-	transform: rotateY(180deg);
-	/*clip-path: ellipse(60px 40px at 75px 30px);*/
+	transform: scaleX(-1);
 }
+
 #logo {
 	width: 25%;
 }
@@ -27,4 +27,12 @@ body {
 	margin-left: 30px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+}
+
+video::-webkit-media-controls {
+	display:none !important;
+  }
+
+#mirror-wrapper:fullscreen  #videoElement{
+height:100%;
 }
