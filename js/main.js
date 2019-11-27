@@ -13,8 +13,8 @@ if (navigator.mediaDevices.getUserMedia) {
       console.log("Something went wrong!");
     });
 }
-function full_screen()
-{
-  wrapper.requestFullscreen();
-}
-video.addEventListener('click', full_screen);
+document.onkeypress = function (e) {
+  console.log(e);
+  if (e.charCode == 102 || e.charCode == 70)
+    wrapper.requestFullscreen();
+};
