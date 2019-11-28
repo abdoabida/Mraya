@@ -20,13 +20,7 @@ body {
 }
 
 #logo {
-	width: 25%;
-}
-#love {
-	color:white;
-	margin-left: 30px;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	width: 20%;
 }
 
 video::-webkit-media-controls {
@@ -44,6 +38,7 @@ height:100%;
 	vertical-align: middle !important; 
 }
 .bmc-button{
+	margin: 10px;
 	text-align: center;
 	padding: 7px 5px 7px 10px !important;
 	line-height: 35px !important;
