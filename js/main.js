@@ -18,3 +18,11 @@ document.onkeypress = function (e) {
   if (e.charCode == 102 || e.charCode == 70)
     wrapper.requestFullscreen();
 };
+
+video.ondblclick = function ()
+{
+  var x = event.clientX;     // Get the horizontal coordinate
+  var y = event.clientY;     // Get the vertical coordinate
+  var coor = "X coords: " + x + ", Y coords: " + y;
+  console.log(coor);
+}
